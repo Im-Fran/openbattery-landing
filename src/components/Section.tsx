@@ -11,10 +11,12 @@ type Props = {
 /** Shared shell for every content section: heading, optional lede, body. */
 export default function Section({ id, title, lede, children }: Props) {
   return (
-    <section className="section" id={id}>
+    <section className="section" id={id} aria-labelledby={`${id}-title`}>
       <div className="section__inner">
         <header className="section__head">
-          <h2 className="section__title">{title}</h2>
+          <h2 className="section__title" id={`${id}-title`}>
+            {title}
+          </h2>
           {lede && <p className="section__lede">{lede}</p>}
         </header>
         {children}

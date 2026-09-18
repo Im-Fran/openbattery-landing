@@ -39,6 +39,7 @@ export default function MenuBar() {
         {t.menubar.fields.map((field, i) => (
           <li key={field} className={i < FREE_FIELDS ? "is-free" : undefined}>
             {field}
+            {i < FREE_FIELDS && <span className="sr-only"> ({t.menubar.freeTag})</span>}
           </li>
         ))}
       </ul>

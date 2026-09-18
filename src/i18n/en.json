@@ -2,7 +2,8 @@
   "lang": {
     "label": "Language",
     "en": "English",
-    "es": "Español"
+    "es": "Español",
+    "changed": "Language set to English"
   },
   "hero": {
     "tagline": "See what your battery is actually doing.",
@@ -10,22 +11,18 @@
     "readoutAlt": "Menu bar reading: 97 percent, charging at 8.6 watts, 4,991 milliamp hours",
     "badges": {
       "os": "for",
-      "chip": "on",
-      "price": "price",
-      "priceValue": "Free"
+      "chip": "on"
     },
     "deckAlt": "The five OpenBattery screens: Health, Lifetime, Power, Charge, and the menu bar popover",
     "captionLeft": "Everything your battery knows",
     "captionRight": "nothing leaves your Mac"
   },
   "appStore": {
-    "alt": "Download on the Mac App Store",
-    "aria": "Download OpenBattery on the Mac App Store"
+    "alt": "Download on the Mac App Store"
   },
   "github": {
-    "lead": "Get the code on",
-    "name": "GitHub",
-    "aria": "OpenBattery source code on GitHub"
+    "label": "GitHub",
+    "aria": "GitHub — OpenBattery source code"
   },
   "stats": {
     "memory": "of memory",
@@ -54,7 +51,7 @@
         "copy": "No account, no sync, no analytics, no network connection at all. What your battery tells the app stays on the machine."
       },
       {
-        "title": "Free and open source.",
+        "title": "Open source.",
         "copy": "MIT licensed, with the entire app published on GitHub for anyone who wants to check what it does."
       }
     ]
@@ -88,7 +85,8 @@
         "lead": "It refuses to disappear.",
         "copy": "Hide the icon and leave every field without a value, and the icon comes back by itself — an invisible menu bar item could never be clicked again."
       }
-    ]
+    ],
+    "freeTag": "no extra polling"
   },
   "features": {
     "title": "One window, the whole picture",
@@ -121,7 +119,8 @@
         "alt": "The menu bar popover: percentage, status in words, level gauge, power block, limit charging and keep display awake",
         "copy": "One click and everything that matters is there — charge, what it is doing in plain words, the power flowing, and a switch to keep your display from going to sleep."
       }
-    }
+    },
+    "commandKey": "Command"
   },
   "history": {
     "title": "The history is yours",
@@ -160,7 +159,8 @@
     "step2After": ".",
     "step3Before": "Drag ",
     "step3Bold": "Charge Limit",
-    "step3After": " to 80, 85, 90 or 95 %."
+    "step3After": " to 80, 85, 90 or 95 %.",
+    "infoButton": "info"
   },
   "accessibility": {
     "title": "Built for everyone",
@@ -194,7 +194,7 @@
   },
   "get": {
     "title": "Get OpenBattery",
-    "lede": "Free and open source, for Macs with Apple Silicon running macOS 14 (Sonoma) or later.",
+    "lede": "Open source, for Macs with Apple Silicon running macOS 14 (Sonoma) or later.",
     "facts": [
       {
         "lead": "Apple Silicon only.",
@@ -208,9 +208,23 @@
   },
   "footer": {
     "copy": "© {year} FranciscoSolis E.I.R.L. · OpenBattery is MIT licensed.",
-    "navLabel": "Legal",
+    "navLabel": "Site",
+    "support": "Support",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "github": "GitHub"
+  },
+  "support": {
+    "title": "Support",
+    "lede": "Two ways to reach someone, depending on whether what you have is a private question or a public bug.",
+    "back": "Back to OpenBattery",
+    "emailTitle": "Send an email",
+    "emailCopy": "For anything about your purchase, your own Mac, or something you would rather not post in public. Say what happened, what you expected instead, and which macOS version you are on.",
+    "emailAction": "Email contact@openbattery.app",
+    "emailSubject": "OpenBattery support",
+    "issueTitle": "Open an issue on GitHub",
+    "issueCopy": "For bugs, readings that look wrong, and feature requests. Issues are public, which is the point: someone else may have hit the same thing, and the fix lands where everyone can see it.",
+    "issueAction": "Open an issue",
+    "note": "OpenBattery is maintained by one person, so an answer can take a few days. Including your macOS version, your Mac model and the app version from Settings makes it faster."
   }
 }

@@ -29,7 +29,9 @@ export function LimitCharging() {
         <li>{t.limit.step1}</li>
         <li>
           {t.limit.step2Before}
-          <kbd>ⓘ</kbd>
+          <kbd role="img" aria-label={t.limit.infoButton}>
+            ⓘ
+          </kbd>
           {t.limit.step2Middle}
           <b>{t.limit.step2Bold}</b>
           {t.limit.step2After}

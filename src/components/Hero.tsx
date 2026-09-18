@@ -16,11 +16,10 @@ export default function Hero() {
   const badges = [
     { label: t.hero.badges.os, value: "macOS 14+" },
     { label: t.hero.badges.chip, value: "Apple Silicon" },
-    { label: t.hero.badges.price, value: t.hero.badges.priceValue },
   ];
 
   return (
-    <section className="hero">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero__inner">
         <div className="hero__copy">
           <img
@@ -32,7 +31,7 @@ export default function Hero() {
           />
 
           <div className="hero__titleblock">
-            <h1 className="hero__name">
+            <h1 className="hero__name" id="hero-title">
               OpenBattery
               <span className="hero__led" aria-hidden="true" />
             </h1>

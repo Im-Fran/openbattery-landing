@@ -13,7 +13,6 @@ export default function AppStoreBadge() {
       href={APP_STORE_URL}
       target="_blank"
       rel="noreferrer"
-      aria-label={t.appStore.aria}
     >
       <img src={`/badges/mac-app-store-${lang}.svg`} alt={t.appStore.alt} width={156} height={40} />
     </a>

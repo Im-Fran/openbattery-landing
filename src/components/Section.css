@@ -1,8 +1,8 @@
 .section {
-  background: #0a0f15;
+  background: var(--ob-bg);
   border-top: 1px solid var(--ob-line);
 }
-.section:nth-of-type(odd) { background: #080c11; }
+.section:nth-of-type(odd) { background: var(--ob-surface); }
 
 .section__inner {
   max-width: 1680px;
@@ -31,7 +31,7 @@
 .section__lede {
   margin: 0;
   max-width: 62ch;
-  font-size: clamp(14px, 1.04vw, 30px);
+  font-size: clamp(1rem, 1.04vw, 30px);
   line-height: 1.55;
   color: var(--ob-ink-dim);
   text-wrap: pretty;
@@ -56,7 +56,7 @@
   border-radius: 14px;
   background: var(--ob-plate);
 }
-.cards h3 {
+.cards :is(h2, h3) {
   margin: 0;
   font-size: clamp(15px, 1.1vw, 32px);
   font-weight: 500;
@@ -64,7 +64,7 @@
 }
 .cards p {
   margin: 0;
-  font-size: clamp(13px, 0.9vw, 26px);
+  font-size: clamp(0.94rem, 0.9vw, 26px);
   line-height: 1.6;
   color: var(--ob-ink-dim);
   text-wrap: pretty;
@@ -74,7 +74,7 @@
 .facts {
   display: flex;
   flex-direction: column;
-  gap: clamp(14px, 1vw, 28px);
+  gap: clamp(1rem, 1vw, 28px);
   margin: 0;
   padding: 0;
   max-width: 96ch;
@@ -83,7 +83,7 @@
 .facts li {
   padding-left: clamp(16px, 1.1vw, 32px);
   border-left: 1px solid var(--ob-line);
-  font-size: clamp(13px, 0.95vw, 28px);
+  font-size: clamp(0.94rem, 0.95vw, 28px);
   line-height: 1.6;
   color: var(--ob-ink-dim);
   text-wrap: pretty;
@@ -99,7 +99,7 @@
   padding: 0.12em 0.36em;
   border: 1px solid var(--ob-line);
   border-radius: 5px;
-  background: rgba(8, 12, 17, 0.6);
+  background: var(--ob-plate-firm);
   font: inherit;
   font-size: 0.92em;
   color: var(--ob-ink);
@@ -112,7 +112,7 @@
   margin: 0;
   padding-left: clamp(22px, 1.5vw, 42px);
   max-width: 72ch;
-  font-size: clamp(13px, 0.95vw, 28px);
+  font-size: clamp(0.94rem, 0.95vw, 28px);
   line-height: 1.6;
   color: var(--ob-ink-dim);
 }
@@ -126,7 +126,7 @@
   border-radius: 14px;
   background: var(--ob-plate);
   max-width: 84ch;
-  font-size: clamp(14px, 1vw, 28px);
+  font-size: clamp(1rem, 1vw, 28px);
   line-height: 1.65;
   color: var(--ob-ink-dim);
   text-wrap: pretty;

@@ -1,0 +1,59 @@
+.support__back {
+  align-self: start;
+  padding: 6px 0;
+  font-size: clamp(0.94rem, 0.9vw, 26px);
+  color: var(--ob-ink-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ob-line-control);
+}
+.support__back:hover { color: var(--ob-ink); }
+.support__back:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}
+
+/* the two options carry equal weight: neither is the "right" one */
+.support__action {
+  align-self: start;
+  margin-top: auto;
+  padding: clamp(10px, 0.63vw, 18px) clamp(16px, 1vw, 28px);
+  border: 1px solid var(--ob-line-control);
+  border-radius: 10px;
+  font-size: clamp(0.94rem, 0.95vw, 28px);
+  color: var(--ob-ink);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.support__action:hover { background: var(--ob-plate-firm); }
+.support__action:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}
+
+.support__note {
+  margin: 0;
+  max-width: 78ch;
+  font-size: clamp(0.88rem, 0.88vw, 26px);
+  line-height: 1.6;
+  color: var(--ob-ink-muted);
+  text-wrap: pretty;
+}
+
+/* the page is one section, so it needs the page background, not the odd stripe */
+#support { background: var(--ob-bg); border-top: 0; }
+
+/* short page: push the footer to the bottom instead of leaving it mid-screen */
+.page-standalone { min-height: 100dvh; display: flex; flex-direction: column; }
+.page-standalone #root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.page-standalone main { flex: 1; }
+.page-standalone #root:empty { flex: none; }
+.fallback {
+  padding: clamp(24px, 4.9vw, 140px);
+  font-size: clamp(1rem, 1.04vw, 30px);
+  line-height: 1.6;
+  color: var(--ob-ink-dim);
+}

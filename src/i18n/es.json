@@ -2,7 +2,8 @@
   "lang": {
     "label": "Idioma",
     "en": "English",
-    "es": "Español"
+    "es": "Español",
+    "changed": "Idioma cambiado a español"
   },
   "hero": {
     "tagline": "Mira lo que tu batería está haciendo de verdad.",
@@ -10,22 +11,18 @@
     "readoutAlt": "Lectura en la barra de menús: 97 por ciento, cargando a 8,6 watts, 4.991 miliamperios-hora",
     "badges": {
       "os": "para",
-      "chip": "en",
-      "price": "precio",
-      "priceValue": "Gratis"
+      "chip": "en"
     },
     "deckAlt": "Las cinco pantallas de OpenBattery: Salud, Vida útil, Energía, Carga y el popover de la barra de menús",
     "captionLeft": "Todo lo que tu batería sabe",
     "captionRight": "nada sale de tu Mac"
   },
   "appStore": {
-    "alt": "Descárgala en el Mac App Store",
-    "aria": "Descarga OpenBattery en el Mac App Store"
+    "alt": "Descárgalo en el Mac App Store"
   },
   "github": {
-    "lead": "Mira el código en",
-    "name": "GitHub",
-    "aria": "Código fuente de OpenBattery en GitHub"
+    "label": "GitHub",
+    "aria": "GitHub — código fuente de OpenBattery"
   },
   "stats": {
     "memory": "de memoria",
@@ -54,7 +51,7 @@
         "copy": "Sin cuenta, sin sincronización, sin analítica, sin conexión de red en absoluto. Lo que tu batería le cuenta a la app se queda en la máquina."
       },
       {
-        "title": "Gratis y de código abierto.",
+        "title": "De código abierto.",
         "copy": "Con licencia MIT y la app completa publicada en GitHub, para quien quiera revisar lo que hace."
       }
     ]
@@ -88,7 +85,8 @@
         "lead": "Se niega a desaparecer.",
         "copy": "Oculta el ícono y deja todos los campos sin valor: el ícono vuelve solo — un elemento invisible en la barra de menús nunca podría volver a clicarse."
       }
-    ]
+    ],
+    "freeTag": "sin consultas extra"
   },
   "features": {
     "title": "Una ventana, el cuadro completo",
@@ -121,7 +119,8 @@
         "alt": "El popover de la barra de menús: porcentaje, estado en palabras, indicador de nivel, bloque de energía, límite de carga y mantener la pantalla despierta",
         "copy": "Un clic y ahí está todo lo que importa — la carga, qué está haciendo en palabras simples, la energía que circula y un interruptor para evitar que tu pantalla se duerma."
       }
-    }
+    },
+    "commandKey": "Comando"
   },
   "history": {
     "title": "El historial es tuyo",
@@ -160,7 +159,8 @@
     "step2After": ".",
     "step3Before": "Arrastra ",
     "step3Bold": "Límite de carga",
-    "step3After": " a 80, 85, 90 o 95 %."
+    "step3After": " a 80, 85, 90 o 95 %.",
+    "infoButton": "información"
   },
   "accessibility": {
     "title": "Hecha para todos",
@@ -194,7 +194,7 @@
   },
   "get": {
     "title": "Consigue OpenBattery",
-    "lede": "Gratis y de código abierto, para Mac con Apple Silicon y macOS 14 (Sonoma) o posterior.",
+    "lede": "De código abierto, para Mac con Apple Silicon y macOS 14 (Sonoma) o posterior.",
     "facts": [
       {
         "lead": "Solo Apple Silicon.",
@@ -208,9 +208,23 @@
   },
   "footer": {
     "copy": "© {year} FranciscoSolis E.I.R.L. · OpenBattery se publica con licencia MIT.",
-    "navLabel": "Legal",
+    "navLabel": "Sitio",
+    "support": "Soporte",
     "terms": "Términos del servicio",
     "privacy": "Política de privacidad",
     "github": "GitHub"
+  },
+  "support": {
+    "title": "Soporte",
+    "lede": "Dos formas de contactar a alguien, según si lo tuyo es una consulta privada o un error que conviene hacer público.",
+    "back": "Volver a OpenBattery",
+    "emailTitle": "Escribe un correo",
+    "emailCopy": "Para cualquier cosa sobre tu compra, tu propio Mac, o algo que prefieras no publicar. Cuenta qué pasó, qué esperabas que pasara y en qué versión de macOS estás.",
+    "emailAction": "Escribir a contact@openbattery.app",
+    "emailSubject": "Soporte de OpenBattery",
+    "issueTitle": "Abre un issue en GitHub",
+    "issueCopy": "Para errores, lecturas que se ven mal y peticiones de funcionalidades. Los issues son públicos, y esa es la gracia: puede que a alguien más le haya pasado lo mismo, y el arreglo queda donde todos lo ven.",
+    "issueAction": "Abrir un issue",
+    "note": "OpenBattery lo mantiene una sola persona, así que una respuesta puede tardar unos días. Incluir tu versión de macOS, el modelo de tu Mac y la versión de la app que aparece en Ajustes lo hace más rápido."
   }
 }

@@ -62,6 +62,11 @@ export default function Features() {
               role="tab"
               id={`tab-${id}`}
               className="features__tab"
+              aria-label={
+                shortcut
+                  ? `${t.features.items[id].name} (${shortcut.replace("⌘", `${t.features.commandKey}-`)})`
+                  : undefined
+              }
               aria-selected={i === active}
               aria-controls={i === active ? `panel-${id}` : undefined}
               tabIndex={i === active ? 0 : -1}

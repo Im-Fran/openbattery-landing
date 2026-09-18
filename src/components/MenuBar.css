@@ -29,12 +29,12 @@
   padding: clamp(8px, 0.56vw, 16px) clamp(14px, 0.9vw, 26px);
   border: 1px solid var(--ob-line);
   border-radius: 10px;
-  background: rgba(8, 12, 17, 0.4);
-  font-size: clamp(13px, 0.95vw, 28px);
+  background: var(--ob-plate-soft);
+  font-size: clamp(0.94rem, 0.95vw, 28px);
   color: var(--ob-ink-dim);
 }
 .menubar__fields li.is-free {
-  border-color: rgba(67, 205, 114, 0.4);
+  border-color: var(--ob-accent-edge);
   color: var(--ob-ink);
 }
 
@@ -44,7 +44,7 @@
   gap: clamp(8px, 0.56vw, 16px);
   margin: 0;
   max-width: 78ch;
-  font-size: clamp(12px, 0.88vw, 26px);
+  font-size: clamp(0.88rem, 0.88vw, 26px);
   line-height: 1.6;
   color: var(--ob-ink-muted);
   text-wrap: pretty;
@@ -54,6 +54,6 @@
   width: 0.6em;
   height: 0.6em;
   border-radius: 3px;
-  border: 1px solid rgba(67, 205, 114, 0.4);
-  background: rgba(67, 205, 114, 0.18);
+  border: 1px solid var(--ob-accent-edge);
+  background: var(--ob-accent-fill-strong);
 }

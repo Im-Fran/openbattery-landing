@@ -1,18 +1,20 @@
-/* Apple fixes its badge's proportions, so this one borrows them: same height,
-   same ~22 % corner radius, same hairline outline on black. */
+/* Matching Apple's badge HEIGHT is required — a competing download button may
+   not be larger. Matching its shape is not: a black pill with a hairline
+   outline and a two-line lockup would read as a badge Apple didn't make. */
 .ghbutton {
   display: inline-flex;
   align-items: center;
-  gap: calc(var(--badge-h) * 0.18);
+  gap: calc(var(--badge-h) * 0.2);
   height: var(--badge-h);
-  padding: 0 calc(var(--badge-h) * 0.28);
-  border: max(1px, calc(var(--badge-h) * 0.022)) solid var(--ob-ink);
-  border-radius: calc(var(--badge-h) * 0.22);
-  background: #000000;
+  padding: 0 calc(var(--badge-h) * 0.34);
+  border: 1px solid var(--ob-line-control);
+  border-radius: 12px;
+  background: var(--ob-plate-soft);
   color: var(--ob-ink);
   text-decoration: none;
+  transition: background-color 120ms ease;
 }
-.ghbutton:hover { background: #12181f; }
+.ghbutton:hover { background: var(--ob-plate-firm); }
 .ghbutton:focus-visible {
   outline: 2px solid var(--ob-accent);
   outline-offset: 3px;
@@ -20,20 +22,16 @@
 
 .ghbutton__mark {
   flex: none;
-  width: calc(var(--badge-h) * 0.44);
-  height: calc(var(--badge-h) * 0.44);
+  width: calc(var(--badge-h) * 0.4);
+  height: calc(var(--badge-h) * 0.4);
   fill: currentColor;
 }
 
-.ghbutton__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+.ghbutton__label {
+  font-size: clamp(0.94rem, 0.95vw, 26px);
   white-space: nowrap;
 }
-.ghbutton__lead { font-size: calc(var(--badge-h) * 0.17); }
-.ghbutton__name {
-  font-size: calc(var(--badge-h) * 0.36);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+
+@media (prefers-reduced-motion: reduce) {
+  .ghbutton { transition: none; }
 }
