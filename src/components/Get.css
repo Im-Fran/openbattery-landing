@@ -1,0 +1,6 @@
+.get__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(14px, 1.2vw, 34px);
+}

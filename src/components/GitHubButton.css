@@ -1,0 +1,39 @@
+/* Apple fixes its badge's proportions, so this one borrows them: same height,
+   same ~22 % corner radius, same hairline outline on black. */
+.ghbutton {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--badge-h) * 0.18);
+  height: var(--badge-h);
+  padding: 0 calc(var(--badge-h) * 0.28);
+  border: max(1px, calc(var(--badge-h) * 0.022)) solid var(--ob-ink);
+  border-radius: calc(var(--badge-h) * 0.22);
+  background: #000000;
+  color: var(--ob-ink);
+  text-decoration: none;
+}
+.ghbutton:hover { background: #12181f; }
+.ghbutton:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}
+
+.ghbutton__mark {
+  flex: none;
+  width: calc(var(--badge-h) * 0.44);
+  height: calc(var(--badge-h) * 0.44);
+  fill: currentColor;
+}
+
+.ghbutton__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.ghbutton__lead { font-size: calc(var(--badge-h) * 0.17); }
+.ghbutton__name {
+  font-size: calc(var(--badge-h) * 0.36);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}

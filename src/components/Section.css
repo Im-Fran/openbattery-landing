@@ -1,0 +1,133 @@
+.section {
+  background: #0a0f15;
+  border-top: 1px solid var(--ob-line);
+}
+.section:nth-of-type(odd) { background: #080c11; }
+
+.section__inner {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: clamp(56px, 5.2vw, 150px) clamp(24px, 4.9vw, 140px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 2.4vw, 68px);
+}
+
+.section__head {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 0.9vw, 26px);
+}
+
+.section__title {
+  margin: 0;
+  font-size: clamp(26px, 2.1vw, 60px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.section__lede {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(14px, 1.04vw, 30px);
+  line-height: 1.55;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}
+
+/* --- shared body primitives --- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(16px, 1.3vw, 38px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cards li {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 0.7vw, 18px);
+  padding: clamp(16px, 1.1vw, 32px);
+  border: 1px solid var(--ob-line);
+  border-radius: 14px;
+  background: var(--ob-plate);
+}
+.cards h3 {
+  margin: 0;
+  font-size: clamp(15px, 1.1vw, 32px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.cards p {
+  margin: 0;
+  font-size: clamp(13px, 0.9vw, 26px);
+  line-height: 1.6;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}
+
+/* one fact per row, the marker doubles as a hairline rule */
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1vw, 28px);
+  margin: 0;
+  padding: 0;
+  max-width: 96ch;
+  list-style: none;
+}
+.facts li {
+  padding-left: clamp(16px, 1.1vw, 32px);
+  border-left: 1px solid var(--ob-line);
+  font-size: clamp(13px, 0.95vw, 28px);
+  line-height: 1.6;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}
+.facts b {
+  display: block;
+  font-weight: 500;
+  color: var(--ob-ink);
+}
+
+.section code,
+.section kbd {
+  padding: 0.12em 0.36em;
+  border: 1px solid var(--ob-line);
+  border-radius: 5px;
+  background: rgba(8, 12, 17, 0.6);
+  font: inherit;
+  font-size: 0.92em;
+  color: var(--ob-ink);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 0.7vw, 18px);
+  margin: 0;
+  padding-left: clamp(22px, 1.5vw, 42px);
+  max-width: 72ch;
+  font-size: clamp(13px, 0.95vw, 28px);
+  line-height: 1.6;
+  color: var(--ob-ink-dim);
+}
+.steps::marker { color: var(--ob-ink-muted); }
+
+.quote {
+  margin: 0;
+  padding: clamp(18px, 1.3vw, 38px) clamp(20px, 1.6vw, 44px);
+  border: 1px solid var(--ob-line);
+  border-left: 2px solid var(--ob-accent);
+  border-radius: 14px;
+  background: var(--ob-plate);
+  max-width: 84ch;
+  font-size: clamp(14px, 1vw, 28px);
+  line-height: 1.65;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}

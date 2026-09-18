@@ -1,0 +1,21 @@
+:root {
+  --ob-ink: #f2f5f8;
+  --ob-ink-dim: #a7b2bf;
+  --ob-ink-muted: #8f9cab;
+  --ob-accent: #43cd72;
+  --ob-line: rgba(238, 242, 246, 0.16);
+  --ob-plate: rgba(8, 12, 17, 0.55);
+  --ob-grid-fine: rgba(238, 242, 246, 0.04);
+  --ob-grid-coarse: rgba(238, 242, 246, 0.075);
+  --badge-h: clamp(44px, 2.85vw, 82px);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--ob-ink);
+  background: #0a0f15;
+}
+

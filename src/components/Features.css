@@ -1,0 +1,106 @@
+.features__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 1.6vw, 44px);
+}
+
+.features__tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(8px, 0.56vw, 16px);
+}
+
+.features__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(8px, 0.49vw, 14px);
+  padding: clamp(10px, 0.63vw, 18px) clamp(14px, 0.9vw, 26px);
+  border: 1px solid var(--ob-line);
+  border-radius: 10px;
+  background: rgba(8, 12, 17, 0.4);
+  font: inherit;
+  font-size: clamp(13px, 1.04vw, 30px);
+  color: var(--ob-ink-dim);
+  cursor: pointer;
+  transition:
+    color 120ms ease,
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+.features__tab:hover { color: var(--ob-ink); }
+.features__tab[aria-selected="true"] {
+  border-color: rgba(67, 205, 114, 0.5);
+  background: rgba(67, 205, 114, 0.1);
+  color: var(--ob-ink);
+}
+.features__tab:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}
+
+.features__kbd {
+  padding: 0.2em 0.5em;
+  border: 1px solid var(--ob-line);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.8em;
+  color: var(--ob-ink-muted);
+}
+
+.features__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(20px, 2.4vw, 68px);
+  padding: clamp(16px, 1.3vw, 38px);
+  border: 1px solid var(--ob-line);
+  border-radius: 16px;
+  background: var(--ob-plate);
+}
+.features__panel:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}
+
+/* shadows are baked into the PNG alpha, so the box adds none */
+.features__shot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 993 / 787;
+  /* keeps the portrait popover shot from stretching the panel to full height */
+  max-height: 560px;
+  border-radius: 10px;
+  background: radial-gradient(120% 120% at 50% 0%, #1f2a38 0%, #131c25 100%);
+  overflow: hidden;
+  animation: features-fade 180ms ease-out;
+}
+.features__shot img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+@keyframes features-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.features__copy {
+  margin: 0;
+  font-size: clamp(14px, 1.04vw, 30px);
+  line-height: 1.6;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}
+
+@media (max-width: 900px) {
+  .features__panel { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .features__shot { animation: none; }
+  .features__tab { transition: none; }
+}

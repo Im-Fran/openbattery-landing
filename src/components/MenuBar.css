@@ -1,0 +1,59 @@
+.menubar__mock {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 0.6vw, 18px);
+  width: max-content;
+  max-width: 100%;
+  padding: clamp(10px, 0.7vw, 20px) clamp(16px, 1.1vw, 32px);
+  border: 1px solid var(--ob-line);
+  border-radius: 12px;
+  background: var(--ob-plate);
+  font-size: clamp(15px, 1.2vw, 34px);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.menubar__icon { font-size: 0.95em; }
+.menubar__sep { color: var(--ob-ink-muted); }
+.menubar__charging { color: var(--ob-accent); }
+
+.menubar__fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(8px, 0.56vw, 16px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menubar__fields li {
+  padding: clamp(8px, 0.56vw, 16px) clamp(14px, 0.9vw, 26px);
+  border: 1px solid var(--ob-line);
+  border-radius: 10px;
+  background: rgba(8, 12, 17, 0.4);
+  font-size: clamp(13px, 0.95vw, 28px);
+  color: var(--ob-ink-dim);
+}
+.menubar__fields li.is-free {
+  border-color: rgba(67, 205, 114, 0.4);
+  color: var(--ob-ink);
+}
+
+.menubar__key {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(8px, 0.56vw, 16px);
+  margin: 0;
+  max-width: 78ch;
+  font-size: clamp(12px, 0.88vw, 26px);
+  line-height: 1.6;
+  color: var(--ob-ink-muted);
+  text-wrap: pretty;
+}
+.menubar__dot {
+  flex: none;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 3px;
+  border: 1px solid rgba(67, 205, 114, 0.4);
+  background: rgba(67, 205, 114, 0.18);
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OpenBattery — See what your Mac battery is actually doing</title>
+    <meta
+      name="description"
+      content="A free, open-source macOS menu bar app that reads your battery straight from IOKit: milliamp-hours, watts, temperature and health. No root, no helper, read-only."
+    />
+    <link rel="canonical" href="https://openbattery.app/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="author" content="Francisco Solís" />
+    <!-- Same keyword set as the App Store listing -->
+    <meta name="keywords" content="openbattery, opensource, battery, bat, charge, power, energy, health, watts, cycles" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0f15" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/openbattery-icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OpenBattery" />
+    <meta property="og:url" content="https://openbattery.app/" />
+    <meta property="og:title" content="OpenBattery — See what your Mac battery is actually doing" />
+    <meta
+      property="og:description"
+      content="A free, open-source macOS menu bar app that reads your battery straight from IOKit: milliamp-hours, watts, temperature and health. No root, no helper, read-only."
+    />
+    <meta property="og:image" content="https://openbattery.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The OpenBattery icon beside its Charge window, showing 97 percent, 8.6 watts and 4,991 milliamp-hours."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OpenBattery — See what your Mac battery is actually doing" />
+    <meta
+      name="twitter:description"
+      content="A free, open-source macOS menu bar app that reads your battery straight from IOKit: milliamp-hours, watts, temperature and health. No root, no helper, read-only."
+    />
+    <meta name="twitter:image" content="https://openbattery.app/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="The OpenBattery icon beside its Charge window, showing 97 percent, 8.6 watts and 4,991 milliamp-hours."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Largest contentful paint: the front card of the hero deck -->
+    <link rel="preload" as="image" href="/shots/charge.png" fetchpriority="high" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "OpenBattery",
+        "url": "https://openbattery.app/",
+        "description": "A native macOS menu bar app that reads your battery straight from IOKit: milliamp-hours, watts, temperature and health. No root, no helper, read-only.",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Menu bar utility",
+        "alternateName": "See what your battery does",
+        "keywords": "openbattery, opensource, battery, bat, charge, power, energy, health, watts, cycles",
+        "operatingSystem": "macOS 14 (Sonoma) or later",
+        "processorRequirements": "Apple Silicon (arm64)",
+        "softwareVersion": "1.0.0",
+        "image": "https://openbattery.app/og-image.png",
+        "screenshot": [
+          "https://openbattery.app/shots/charge.png",
+          "https://openbattery.app/shots/power.png",
+          "https://openbattery.app/shots/health.png",
+          "https://openbattery.app/shots/lifetime.png",
+          "https://openbattery.app/shots/menubar.png"
+        ],
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/Im-Fran/openbattery",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Francisco Solís",
+          "url": "https://fsolism.cl"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "FranciscoSolis E.I.R.L.",
+          "url": "https://fsolism.cl"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      OpenBattery is a free, open-source macOS menu bar app that reads your battery straight from
+      IOKit — milliamp-hours, watts, temperature and health, with no root, no helper and no network
+      access. It needs macOS 14 (Sonoma) or later on a Mac with Apple Silicon. The source lives at
+      <a href="https://github.com/Im-Fran/openbattery">github.com/Im-Fran/openbattery</a>.
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

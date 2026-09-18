@@ -1,0 +1,224 @@
+/* Ported verbatim from the approved hero comp (2880x1620 artboard).
+   Every max in a clamp() equals the comp value, so at 2880px the section
+   matches the artboard pixel for pixel. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    90% 120% at 18% 0%,
+    #1f2a38 0%,
+    #141d27 46%,
+    #0a0f15 100%
+  );
+}
+
+/* technical grid: fine 72px cells over coarse 360px cells */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero::before {
+  background-image:
+    linear-gradient(var(--ob-grid-fine) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ob-grid-fine) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+.hero::after {
+  background-image:
+    linear-gradient(var(--ob-grid-coarse) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ob-grid-coarse) 1px, transparent 1px);
+  background-size: 360px 360px;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: clamp(48px, 5.2vw, 150px) clamp(24px, 4.9vw, 140px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(40px, 4.2vw, 120px);
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 1.8vw, 52px);
+  min-width: 0;
+}
+
+.hero__icon {
+  width: clamp(88px, 7vw, 200px);
+  height: auto;
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.45));
+}
+
+.hero__titleblock {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 1.2vw, 34px);
+}
+
+.hero__name {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 0.8vw, 22px);
+  margin: 0;
+  font-size: clamp(38px, 3.6vw, 102px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+/* status LED after the wordmark */
+.hero__led {
+  flex: none;
+  width: clamp(11px, 0.85vw, 24px);
+  height: clamp(11px, 0.85vw, 24px);
+  border-radius: 50%;
+  background: var(--ob-accent);
+  box-shadow:
+    0 0 0 0.33em rgba(67, 205, 114, 0.14),
+    0 0 26px rgba(67, 205, 114, 0.55);
+}
+
+.hero__tagline {
+  margin: 0;
+  max-width: 22ch;
+  font-size: clamp(17px, 1.34vw, 38px);
+  line-height: 1.45;
+  color: var(--ob-ink-dim);
+  text-wrap: pretty;
+}
+
+.hero__subtitle {
+  margin: 0;
+  max-width: 46ch;
+  font-size: clamp(13px, 0.95vw, 26px);
+  line-height: 1.6;
+  color: var(--ob-ink-muted);
+  text-wrap: pretty;
+}
+
+.hero__readout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(14px, 0.9vw, 26px);
+  width: max-content;
+  max-width: 100%;
+  padding: clamp(12px, 0.77vw, 22px) clamp(18px, 1.2vw, 34px);
+  border: 1px solid var(--ob-line);
+  border-radius: 14px;
+  background: var(--ob-plate);
+  font-size: clamp(17px, 1.2vw, 34px);
+  color: var(--ob-ink);
+}
+.hero__readout span { white-space: nowrap; }
+.hero__readout .is-charging { color: var(--ob-accent); }
+.hero__readout hr {
+  width: 1px;
+  height: 1em;
+  margin: 0;
+  border: 0;
+  background: rgba(238, 242, 246, 0.2);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  /* Apple's badge asks for clear space of a quarter of its own height */
+  gap: max(calc(var(--badge-h) / 4), clamp(10px, 0.7vw, 20px));
+}
+
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(10px, 0.56vw, 16px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hero__badges li {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 0.49vw, 14px);
+  padding: clamp(9px, 0.56vw, 16px) clamp(14px, 0.9vw, 26px);
+  border: 1px solid var(--ob-line);
+  border-radius: 10px;
+  background: rgba(8, 12, 17, 0.4);
+  font-size: clamp(13px, 1.04vw, 30px);
+  color: #c5cfda;
+}
+.hero__badges b {
+  font-weight: 400;
+  color: var(--ob-ink-muted);
+}
+
+.hero__panel {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 0.77vw, 22px);
+  min-width: 0;
+}
+
+/* Fanned deck. Cards share a pivot well below the stack, so a single
+   rotation both tilts and spreads them; --i drives the lateral offset. */
+.deck {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1700 / 1340;
+  min-width: 0;
+}
+
+.deck__card,
+.deck__popover {
+  position: absolute;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.deck__card {
+  left: calc(var(--i) * 9.4%);
+  bottom: 24.6%;
+  width: 57.6%;
+  transform-origin: 50% 165%;
+}
+
+.deck__popover {
+  left: 0.6%;
+  bottom: 3%;
+  width: 25.3%;
+  transform: rotate(-3.5deg);
+  filter: drop-shadow(0 40px 70px rgba(0, 0, 0, 0.55));
+}
+
+.hero__caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: clamp(13px, 0.9vw, 26px);
+  color: var(--ob-ink-muted);
+}
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+  .hero__tagline { max-width: 34ch; }
+  /* the fan overhangs its box, so narrow the deck to keep it inside the gutter */
+  .deck {
+    width: 88%;
+    margin-inline: auto;
+  }
+}
+

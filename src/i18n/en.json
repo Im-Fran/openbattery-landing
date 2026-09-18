@@ -1,0 +1,216 @@
+{
+  "lang": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español"
+  },
+  "hero": {
+    "tagline": "See what your battery is actually doing.",
+    "subtitle": "macOS shows you a percentage. Your battery knows how many milliamp-hours it really holds, how many watts are flowing right now, how hot it has ever been and when it was built. OpenBattery puts all of it in your menu bar.",
+    "readoutAlt": "Menu bar reading: 97 percent, charging at 8.6 watts, 4,991 milliamp hours",
+    "badges": {
+      "os": "for",
+      "chip": "on",
+      "price": "price",
+      "priceValue": "Free"
+    },
+    "deckAlt": "The five OpenBattery screens: Health, Lifetime, Power, Charge, and the menu bar popover",
+    "captionLeft": "Everything your battery knows",
+    "captionRight": "nothing leaves your Mac"
+  },
+  "appStore": {
+    "alt": "Download on the Mac App Store",
+    "aria": "Download OpenBattery on the Mac App Store"
+  },
+  "github": {
+    "lead": "Get the code on",
+    "name": "GitHub",
+    "aria": "OpenBattery source code on GitHub"
+  },
+  "stats": {
+    "memory": "of memory",
+    "cpu": "CPU while idle",
+    "accounts": "accounts or sign-ups",
+    "local": "on your Mac"
+  },
+  "why": {
+    "title": "Why OpenBattery",
+    "lede": "A battery app has no business asking for your password, running in the background, or sending anything anywhere.",
+    "reasons": [
+      {
+        "title": "No password, ever.",
+        "copy": "OpenBattery never asks for your administrator password and installs nothing in the background. It runs as a normal app."
+      },
+      {
+        "title": "It only reads.",
+        "copy": "OpenBattery looks at your battery and shows you what it finds. It never changes a setting, so it can't leave your Mac or your battery in a strange state."
+      },
+      {
+        "title": "Light enough to forget.",
+        "copy": "About 18 MB of memory and no measurable CPU while it sits there. It wakes up when you plug in or unplug, not every second."
+      },
+      {
+        "title": "Nothing leaves your Mac.",
+        "copy": "No account, no sync, no analytics, no network connection at all. What your battery tells the app stays on the machine."
+      },
+      {
+        "title": "Free and open source.",
+        "copy": "MIT licensed, with the entire app published on GitHub for anyone who wants to check what it does."
+      }
+    ]
+  },
+  "menubar": {
+    "title": "Your menu bar, your readings",
+    "ledeBefore": "Pick which readings sit in your menu bar and in what order. Drag them around in Settings (",
+    "ledeAfter": ") — or use a click, a right-click or the keyboard, whichever you prefer.",
+    "mockAlt": "Menu bar rendering: battery icon, 97 percent, charging at 8.6 watts, 4,991 milliamp hours",
+    "fields": [
+      "Percentage",
+      "Time remaining",
+      "Charging status",
+      "Battery watts",
+      "Adapter watts",
+      "System watts",
+      "Charge in mAh",
+      "Temperature"
+    ],
+    "freeNote": "These three are free: your Mac already knows them. Adding watts, mAh or temperature makes OpenBattery check every ten seconds, which costs a sliver of battery — small, but real, so it is worth saying out loud.",
+    "facts": [
+      {
+        "lead": "A dash in the menu bar is worse than nothing.",
+        "copy": "A reading that isn't available is left out instead of showing an empty dash — unplugged, there is simply no charger line."
+      },
+      {
+        "lead": "The icon follows the charge.",
+        "copy": "It fills up as your Mac charges, shows a bolt while it is plugged in, and adds a little cup while you are keeping the display awake."
+      },
+      {
+        "lead": "It refuses to disappear.",
+        "copy": "Hide the icon and leave every field without a value, and the icon comes back by itself — an invisible menu bar item could never be clicked again."
+      }
+    ]
+  },
+  "features": {
+    "title": "One window, the whole picture",
+    "lede": "Four views of your battery, each one laid out the same way, so moving between them never asks you to learn anything new.",
+    "tablist": "OpenBattery screens",
+    "items": {
+      "charge": {
+        "name": "Charge",
+        "alt": "Charge tab: percentage, charge in milliamp-hours, temperature and a bar per hour for the last 12 hours",
+        "copy": "How full the battery is right now, how many milliamp-hours that really is, and how the charge has moved over the last 12 hours — one bar per hour. Hours your Mac spent asleep stay blank instead of being made up."
+      },
+      "power": {
+        "name": "Power",
+        "alt": "Power tab: watts in motion, adapter description and a chart of system load over the last 60 seconds",
+        "copy": "The power flowing right now: what the charger is giving, or what the battery is spending when you are unplugged, and how that has moved over the last minute."
+      },
+      "health": {
+        "name": "Health",
+        "alt": "Health tab: health percentage, cycles, age and twelve months of retained capacity",
+        "copy": "How much capacity your battery has left compared to the day it was made, whether Apple would call that normal, how many charge cycles it has been through, and a year of how it has aged."
+      },
+      "lifetime": {
+        "name": "Lifetime",
+        "alt": "Lifetime tab: lifetime average temperature, temperature and voltage range, and peak charge versus discharge current",
+        "copy": "The story of the whole battery: how warm it has run on average and whether that is healthy, the hottest and coldest it has ever been, and how long it has been working."
+      },
+      "menubar": {
+        "name": "Menu bar",
+        "shortcut": "click",
+        "alt": "The menu bar popover: percentage, status in words, level gauge, power block, limit charging and keep display awake",
+        "copy": "One click and everything that matters is there — charge, what it is doing in plain words, the power flowing, and a switch to keep your display from going to sleep."
+      }
+    }
+  },
+  "history": {
+    "title": "The history is yours",
+    "lede": "Your battery keeps no diary, so the only history that exists is the one OpenBattery writes down for you.",
+    "facts": [
+      {
+        "lead": "It starts keeping notes the day you install it.",
+        "copy": "The charge level is noted every few minutes, and the battery's capacity once a day. That is where the 12-hour and 12-month charts come from."
+      },
+      {
+        "lead": "Those notes stay on your Mac.",
+        "copy": "No account, no sync, no upload. Nothing about your battery ever leaves the machine."
+      },
+      {
+        "lead": "Gaps show as gaps.",
+        "copy": "If your Mac was asleep or the app wasn't running, that hour stays empty instead of being filled with a guess."
+      },
+      {
+        "lead": "It stops watching when you aren't looking.",
+        "copy": "Cover the window with another app and OpenBattery stops checking — no point spending your battery to draw a chart nobody can see."
+      },
+      {
+        "lead": "No battery gets a sentence, not a wall of dashes.",
+        "copy": "On a Mac without a built-in battery it simply says so, and the views that need one are greyed out instead of disappearing."
+      }
+    ]
+  },
+  "limit": {
+    "title": "Why OpenBattery doesn't limit charging",
+    "quote": "macOS already limits charging on its own, so OpenBattery doesn't try to. Older apps did it by reaching into the hardware with administrator rights; today's Macs don't allow that, and pretending otherwise would mean a password prompt, something running in the background, and a real chance of leaving your battery stuck — all to reach a setting your Mac already has.",
+    "lede": "So instead, OpenBattery shows you where it lives and opens the right panel for you:",
+    "step1": "Open Battery settings.",
+    "step2Before": "Click the ",
+    "step2Middle": " button next to ",
+    "step2Bold": "Charging",
+    "step2After": ".",
+    "step3Before": "Drag ",
+    "step3Bold": "Charge Limit",
+    "step3After": " to 80, 85, 90 or 95 %."
+  },
+  "accessibility": {
+    "title": "Built for everyone",
+    "lede": "Every reading has a spoken equivalent, because a number nobody can hear is not a reading.",
+    "facts": [
+      {
+        "lead": "Color is never the only signal.",
+        "copy": "Charging, Low Power Mode and warnings are always said in words as well."
+      },
+      {
+        "lead": "VoiceOver reads it like a sentence.",
+        "copy": "The menu bar announces “Battery 97%, charging, keeping display awake” — not the name of an icon."
+      },
+      {
+        "lead": "A missing value says “Not available”.",
+        "copy": "Where the screen shows a dash, VoiceOver says so out loud, because a stray dash sounds like a broken control."
+      },
+      {
+        "lead": "The serial number is spelled out",
+        "copy": "letter by letter, instead of being read as a word."
+      },
+      {
+        "lead": "Nothing depends on dragging.",
+        "copy": "Everything you can drag you can also do with a click, a right-click or the keyboard."
+      },
+      {
+        "lead": "The small print is readable.",
+        "copy": "Secondary text is dark enough to stay legible, not just decorative grey."
+      }
+    ]
+  },
+  "get": {
+    "title": "Get OpenBattery",
+    "lede": "Free and open source, for Macs with Apple Silicon running macOS 14 (Sonoma) or later.",
+    "facts": [
+      {
+        "lead": "Apple Silicon only.",
+        "copy": "Macs with an Intel processor aren't supported, so it is better to know that here than after a download."
+      },
+      {
+        "lead": "Or build it yourself.",
+        "copy": "The whole app lives on GitHub, MIT licensed, and the README walks you through building it in a couple of minutes."
+      }
+    ]
+  },
+  "footer": {
+    "copy": "© {year} FranciscoSolis E.I.R.L. · OpenBattery is MIT licensed.",
+    "navLabel": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "github": "GitHub"
+  }
+}

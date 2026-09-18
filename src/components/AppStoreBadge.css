@@ -1,0 +1,16 @@
+/* Apple asks for the badge to keep its ratio and to breathe: clear space
+   of at least a quarter of its height on every side. */
+.appstore {
+  display: inline-block;
+  border-radius: 9px;
+  line-height: 0;
+}
+.appstore img {
+  display: block;
+  width: auto;
+  height: var(--badge-h);
+}
+.appstore:focus-visible {
+  outline: 2px solid var(--ob-accent);
+  outline-offset: 3px;
+}

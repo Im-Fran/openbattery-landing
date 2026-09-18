@@ -1,0 +1,216 @@
+{
+  "lang": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español"
+  },
+  "hero": {
+    "tagline": "Mira lo que tu batería está haciendo de verdad.",
+    "subtitle": "macOS te muestra un porcentaje. Tu batería sabe cuántos miliamperios-hora guarda realmente, cuántos watts están circulando ahora mismo, cuánto calor ha llegado a soportar y cuándo fue fabricada. OpenBattery pone todo eso en tu barra de menús.",
+    "readoutAlt": "Lectura en la barra de menús: 97 por ciento, cargando a 8,6 watts, 4.991 miliamperios-hora",
+    "badges": {
+      "os": "para",
+      "chip": "en",
+      "price": "precio",
+      "priceValue": "Gratis"
+    },
+    "deckAlt": "Las cinco pantallas de OpenBattery: Salud, Vida útil, Energía, Carga y el popover de la barra de menús",
+    "captionLeft": "Todo lo que tu batería sabe",
+    "captionRight": "nada sale de tu Mac"
+  },
+  "appStore": {
+    "alt": "Descárgala en el Mac App Store",
+    "aria": "Descarga OpenBattery en el Mac App Store"
+  },
+  "github": {
+    "lead": "Mira el código en",
+    "name": "GitHub",
+    "aria": "Código fuente de OpenBattery en GitHub"
+  },
+  "stats": {
+    "memory": "de memoria",
+    "cpu": "de CPU en reposo",
+    "accounts": "cuentas ni registros",
+    "local": "en tu Mac"
+  },
+  "why": {
+    "title": "Por qué OpenBattery",
+    "lede": "Una app de batería no tiene por qué pedirte la contraseña, quedarse corriendo en segundo plano ni mandar nada a ninguna parte.",
+    "reasons": [
+      {
+        "title": "Nunca te pide la contraseña.",
+        "copy": "OpenBattery jamás pide tu contraseña de administrador y no instala nada en segundo plano. Se ejecuta como una app normal."
+      },
+      {
+        "title": "Solo lee.",
+        "copy": "OpenBattery mira tu batería y te muestra lo que encuentra. Nunca cambia un ajuste, así que no puede dejar tu Mac ni tu batería en un estado raro."
+      },
+      {
+        "title": "Tan liviana que se olvida.",
+        "copy": "Unos 18 MB de memoria y nada de CPU medible mientras está ahí. Despierta cuando conectas o desconectas el cargador, no cada segundo."
+      },
+      {
+        "title": "Nada sale de tu Mac.",
+        "copy": "Sin cuenta, sin sincronización, sin analítica, sin conexión de red en absoluto. Lo que tu batería le cuenta a la app se queda en la máquina."
+      },
+      {
+        "title": "Gratis y de código abierto.",
+        "copy": "Con licencia MIT y la app completa publicada en GitHub, para quien quiera revisar lo que hace."
+      }
+    ]
+  },
+  "menubar": {
+    "title": "Tu barra de menús, tus lecturas",
+    "ledeBefore": "Elige qué lecturas van en tu barra de menús y en qué orden. Arrástralas en Ajustes (",
+    "ledeAfter": ") — o usa un clic, un clic derecho o el teclado, lo que prefieras.",
+    "mockAlt": "Barra de menús: ícono de batería, 97 por ciento, cargando a 8,6 watts, 4.991 miliamperios-hora",
+    "fields": [
+      "Porcentaje",
+      "Tiempo restante",
+      "Estado de carga",
+      "Watts de la batería",
+      "Watts del cargador",
+      "Watts del sistema",
+      "Carga en mAh",
+      "Temperatura"
+    ],
+    "freeNote": "Estas tres son gratis: tu Mac ya las conoce. Agregar watts, mAh o temperatura hace que OpenBattery consulte cada diez segundos, lo que cuesta un poquito de batería — poco, pero real, así que vale la pena decirlo.",
+    "facts": [
+      {
+        "lead": "Un guion en la barra de menús es peor que nada.",
+        "copy": "Una lectura que no está disponible se omite en vez de mostrar un guion vacío — desconectado, simplemente no hay línea del cargador."
+      },
+      {
+        "lead": "El ícono sigue a la carga.",
+        "copy": "Se llena a medida que tu Mac carga, muestra un rayo mientras está enchufado y agrega una tacita cuando estás manteniendo la pantalla despierta."
+      },
+      {
+        "lead": "Se niega a desaparecer.",
+        "copy": "Oculta el ícono y deja todos los campos sin valor: el ícono vuelve solo — un elemento invisible en la barra de menús nunca podría volver a clicarse."
+      }
+    ]
+  },
+  "features": {
+    "title": "Una ventana, el cuadro completo",
+    "lede": "Cuatro vistas de tu batería, todas con la misma estructura, para que moverte entre ellas nunca te obligue a aprender algo nuevo.",
+    "tablist": "Pantallas de OpenBattery",
+    "items": {
+      "charge": {
+        "name": "Carga",
+        "alt": "Pestaña Carga: porcentaje, carga en miliamperios-hora, temperatura y una barra por hora de las últimas 12 horas",
+        "copy": "Qué tan llena está la batería ahora mismo, cuántos miliamperios-hora son realmente y cómo se ha movido la carga en las últimas 12 horas — una barra por hora. Las horas que tu Mac pasó durmiendo quedan en blanco en vez de inventarse."
+      },
+      "power": {
+        "name": "Energía",
+        "alt": "Pestaña Energía: watts en movimiento, descripción del cargador y un gráfico de la carga del sistema en los últimos 60 segundos",
+        "copy": "La energía que circula ahora mismo: lo que entrega el cargador, o lo que gasta la batería cuando estás desconectado, y cómo eso se ha movido en el último minuto."
+      },
+      "health": {
+        "name": "Salud",
+        "alt": "Pestaña Salud: porcentaje de salud, ciclos, antigüedad y doce meses de capacidad retenida",
+        "copy": "Cuánta capacidad le queda a tu batería comparada con el día en que se fabricó, si Apple consideraría eso normal, cuántos ciclos de carga lleva y un año de cómo ha envejecido."
+      },
+      "lifetime": {
+        "name": "Vida útil",
+        "alt": "Pestaña Vida útil: temperatura promedio de toda su vida, rango de temperatura y voltaje, y corriente máxima de carga frente a descarga",
+        "copy": "La historia de la batería completa: qué tan caliente ha funcionado en promedio y si eso es sano, lo más caliente y lo más fría que ha estado, y cuánto tiempo lleva trabajando."
+      },
+      "menubar": {
+        "name": "Barra de menús",
+        "shortcut": "clic",
+        "alt": "El popover de la barra de menús: porcentaje, estado en palabras, indicador de nivel, bloque de energía, límite de carga y mantener la pantalla despierta",
+        "copy": "Un clic y ahí está todo lo que importa — la carga, qué está haciendo en palabras simples, la energía que circula y un interruptor para evitar que tu pantalla se duerma."
+      }
+    }
+  },
+  "history": {
+    "title": "El historial es tuyo",
+    "lede": "Tu batería no lleva ningún diario, así que el único historial que existe es el que OpenBattery escribe para ti.",
+    "facts": [
+      {
+        "lead": "Empieza a tomar notas el día que la instalas.",
+        "copy": "El nivel de carga se anota cada pocos minutos, y la capacidad de la batería una vez al día. De ahí salen los gráficos de 12 horas y 12 meses."
+      },
+      {
+        "lead": "Esas notas se quedan en tu Mac.",
+        "copy": "Sin cuenta, sin sincronización, sin subidas. Nada sobre tu batería sale nunca de la máquina."
+      },
+      {
+        "lead": "Los huecos se ven como huecos.",
+        "copy": "Si tu Mac estaba durmiendo o la app no estaba corriendo, esa hora queda vacía en vez de rellenarse con una suposición."
+      },
+      {
+        "lead": "Deja de mirar cuando tú no estás mirando.",
+        "copy": "Tapa la ventana con otra app y OpenBattery deja de consultar — no tiene sentido gastar tu batería para dibujar un gráfico que nadie puede ver."
+      },
+      {
+        "lead": "Sin batería te da una frase, no un muro de guiones.",
+        "copy": "En un Mac sin batería integrada simplemente lo dice, y las vistas que necesitan una quedan atenuadas en vez de desaparecer."
+      }
+    ]
+  },
+  "limit": {
+    "title": "Por qué OpenBattery no limita la carga",
+    "quote": "macOS ya limita la carga por su cuenta, así que OpenBattery no lo intenta. Las apps antiguas lo hacían metiendo mano al hardware con permisos de administrador; los Mac de hoy no lo permiten, y fingir lo contrario significaría una petición de contraseña, algo corriendo en segundo plano y una posibilidad real de dejar tu batería atascada — todo para llegar a un ajuste que tu Mac ya tiene.",
+    "lede": "Así que, en vez de eso, OpenBattery te muestra dónde está y te abre el panel correcto:",
+    "step1": "Abre los ajustes de Batería.",
+    "step2Before": "Haz clic en el botón ",
+    "step2Middle": " junto a ",
+    "step2Bold": "Carga",
+    "step2After": ".",
+    "step3Before": "Arrastra ",
+    "step3Bold": "Límite de carga",
+    "step3After": " a 80, 85, 90 o 95 %."
+  },
+  "accessibility": {
+    "title": "Hecha para todos",
+    "lede": "Cada lectura tiene un equivalente hablado, porque un número que nadie puede oír no es una lectura.",
+    "facts": [
+      {
+        "lead": "El color nunca es la única señal.",
+        "copy": "La carga, el Modo de Bajo Consumo y las advertencias siempre se dicen también en palabras."
+      },
+      {
+        "lead": "VoiceOver lo lee como una frase.",
+        "copy": "La barra de menús anuncia «Batería 97 %, cargando, manteniendo la pantalla despierta» — no el nombre de un ícono."
+      },
+      {
+        "lead": "Un valor que falta dice «No disponible».",
+        "copy": "Donde la pantalla muestra un guion, VoiceOver lo dice en voz alta, porque un guion suelto suena a control roto."
+      },
+      {
+        "lead": "El número de serie se deletrea",
+        "copy": "letra por letra, en vez de leerse como una palabra."
+      },
+      {
+        "lead": "Nada depende de arrastrar.",
+        "copy": "Todo lo que puedes arrastrar también lo puedes hacer con un clic, un clic derecho o el teclado."
+      },
+      {
+        "lead": "La letra chica se lee.",
+        "copy": "El texto secundario tiene contraste suficiente para seguir siendo legible, no es solo gris decorativo."
+      }
+    ]
+  },
+  "get": {
+    "title": "Consigue OpenBattery",
+    "lede": "Gratis y de código abierto, para Mac con Apple Silicon y macOS 14 (Sonoma) o posterior.",
+    "facts": [
+      {
+        "lead": "Solo Apple Silicon.",
+        "copy": "Los Mac con procesador Intel no son compatibles, así que es mejor saberlo aquí que después de descargarla."
+      },
+      {
+        "lead": "O compílala tú mismo.",
+        "copy": "La app completa vive en GitHub, con licencia MIT, y el README te guía para compilarla en un par de minutos."
+      }
+    ]
+  },
+  "footer": {
+    "copy": "© {year} FranciscoSolis E.I.R.L. · OpenBattery se publica con licencia MIT.",
+    "navLabel": "Legal",
+    "terms": "Términos del servicio",
+    "privacy": "Política de privacidad",
+    "github": "GitHub"
+  }
+}
