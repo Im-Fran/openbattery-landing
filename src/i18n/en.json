@@ -15,14 +15,18 @@
     },
     "deckAlt": "The five OpenBattery screens: Health, Lifetime, Power, Charge, and the menu bar popover",
     "captionLeft": "Everything your battery knows",
-    "captionRight": "nothing leaves your Mac"
+    "captionRight": "nothing leaves your Mac",
+    "iosSoon": "iOS version coming soon"
   },
-  "appStore": {
-    "alt": "Download on the Mac App Store"
+  "download": {
+    "label": "Download for macOS"
   },
   "github": {
     "label": "GitHub",
     "aria": "GitHub — OpenBattery source code"
+  },
+  "supportButton": {
+    "label": "Support & contact"
   },
   "stats": {
     "memory": "of memory",

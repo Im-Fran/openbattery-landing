@@ -1,5 +1,5 @@
 import Section from "./Section";
-import AppStoreBadge from "./AppStoreBadge";
+import DownloadButton from "./DownloadButton";
 import GitHubButton from "./GitHubButton";
 import { useI18n } from "../i18n";
 import "./Get.css";
@@ -10,7 +10,7 @@ export default function Get() {
   return (
     <Section id="get" title={t.get.title} lede={t.get.lede}>
       <div className="get__actions">
-        <AppStoreBadge />
+        <DownloadButton />
         <GitHubButton />
       </div>
       <ul className="facts">

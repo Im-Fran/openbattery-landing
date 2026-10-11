@@ -1,0 +1,11 @@
+// Static assets only: there is no Worker script. Cloudflare's Workers Builds
+// runs `npm run build`, then uploads dist/ — `wrangler deploy` on the
+// production branch, `wrangler versions upload` on every other branch, and
+// the latter has no autodetection, so it needs this file to find dist/.
+{
+  "name": "openbattery-landing",
+  "compatibility_date": "2026-10-06",
+  "assets": {
+    "directory": "./dist"
+  }
+}

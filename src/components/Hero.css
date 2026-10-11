@@ -58,6 +58,29 @@
   filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.45));
 }
 
+/* announcement pill: a hollow LED, because the iOS app isn't on yet */
+.hero__soon {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(8px, 0.49vw, 14px);
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+  padding: clamp(7px, 0.45vw, 13px) clamp(13px, 0.85vw, 24px);
+  border: 1px solid var(--ob-accent-edge);
+  border-radius: 999px;
+  background: var(--ob-accent-fill);
+  font-size: clamp(13px, 0.9vw, 26px);
+  color: var(--ob-ink-chip);
+}
+.hero__soon-dot {
+  flex: none;
+  width: 0.6em;
+  height: 0.6em;
+  border: 2px solid var(--ob-accent);
+  border-radius: 50%;
+}
+
 .hero__titleblock {
   display: flex;
   flex-direction: column;
@@ -132,8 +155,7 @@
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  /* Apple's badge asks for clear space of a quarter of its own height */
-  gap: max(calc(var(--badge-h) / 4), clamp(10px, 0.7vw, 20px));
+  gap: clamp(10px, 0.7vw, 20px);
 }
 
 .hero__badges {
