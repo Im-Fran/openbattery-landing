@@ -119,6 +119,10 @@ CSS chunks (the shared React chunk is split out, so the support page costs ~1.5 
 the bundled font files, and the contents of `public/`. Any static host works; there is no
 server-side piece. `/support` resolves to `dist/support/index.html` with no rewrite rules.
 
+Production is a Cloudflare Worker with static assets only (no script), deployed by Workers
+Builds. `wrangler.jsonc` points it at `dist/`: `wrangler deploy` on the production branch can
+detect that on its own, but `wrangler versions upload`, which builds every other branch, cannot.
+
 The absolute URLs in `index.html`, `support/index.html`, `sitemap.xml` and `robots.txt` are
 hardcoded to `https://openbattery.app`. Change them together if the domain ever moves.
 
