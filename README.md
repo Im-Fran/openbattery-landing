@@ -12,6 +12,10 @@ no CSS framework, no state library: each page is its own Vite entry with its own
 Every section is a component under `src/components/`, and all user-facing copy lives in two JSON
 files so both pages render in English (default) or Spanish.
 
+The macOS app is distributed through GitHub Releases only. The download buttons point to
+`https://github.com/Im-Fran/openbattery/releases/latest`, which GitHub resolves to the newest
+published release, so shipping a new version needs no change here.
+
 The design is dark-only and sized in `clamp()` against the 2880×1620 artboard the hero was
 ported from, so the layout scales continuously instead of snapping between breakpoints. There is
 one media query, at 900 px, where the hero drops to a single column.
@@ -63,7 +67,6 @@ calls at all — the font is bundled, not fetched from a CDN.
 index.html              The landing page: SEO, Open Graph, Twitter card, JSON-LD
 support/index.html      The support page, with its own canonical and ContactPage JSON-LD
 public/
-  badges/               Apple's Mac App Store lockups, one SVG per locale
   shots/                App screenshots used by the hero deck and the tabs
   og-image.png          1200×630 social preview
   robots.txt, sitemap.xml
@@ -97,9 +100,7 @@ Both `localStorage` calls are wrapped in `try`/`catch`. Reading it throws outrig
 is blocked (Safari's "Block all cookies"), and the read happens during the provider's first
 render — unguarded, it takes the whole page down to a blank root.
 
-To add a locale: drop a `<code>.json` next to the others, add the code to the `Lang` union, and
-add a matching App Store badge at `public/badges/mac-app-store-<code>.svg` (download the lockup
-for that storefront from [Apple's marketing resources](https://developer.apple.com/app-store/marketing/guidelines/)).
+To add a locale: drop a `<code>.json` next to the others and add the code to the `Lang` union.
 
 Each language has a shareable URL (`/?lang=es`), which is what makes a Spanish link worth sending
 to someone. It is deliberately *not* declared to search engines: the page is client-rendered, so
@@ -124,10 +125,6 @@ hardcoded to `https://openbattery.app`. Change them together if the domain ever 
 ## License
 
 The OpenBattery app is MIT licensed — see the [app repository](https://github.com/Im-Fran/openbattery).
-
-The Mac App Store badges under `public/badges/` are Apple artwork, covered by
-[Apple's marketing guidelines](https://developer.apple.com/app-store/marketing/guidelines/), not
-by this project's license. Don't recolor or re-typeset them.
 
 ---
 

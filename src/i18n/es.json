@@ -15,14 +15,18 @@
     },
     "deckAlt": "Las cinco pantallas de OpenBattery: Salud, Vida útil, Energía, Carga y el popover de la barra de menús",
     "captionLeft": "Todo lo que tu batería sabe",
-    "captionRight": "nada sale de tu Mac"
+    "captionRight": "nada sale de tu Mac",
+    "iosSoon": "Próximamente versión para iOS"
   },
-  "appStore": {
-    "alt": "Descárgalo en el Mac App Store"
+  "download": {
+    "label": "Descargar para macOS"
   },
   "github": {
     "label": "GitHub",
     "aria": "GitHub — código fuente de OpenBattery"
+  },
+  "supportButton": {
+    "label": "Soporte y contacto"
   },
   "stats": {
     "memory": "de memoria",

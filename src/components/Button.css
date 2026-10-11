@@ -1,7 +1,6 @@
-/* Matching Apple's badge HEIGHT is required — a competing download button may
-   not be larger. Matching its shape is not: a black pill with a hairline
-   outline and a two-line lockup would read as a badge Apple didn't make. */
-.ghbutton {
+/* The hero and Get rows share one control height (--badge-h), so a row of
+   mixed buttons lines up without each one guessing at the others. */
+.btn {
   display: inline-flex;
   align-items: center;
   gap: calc(var(--badge-h) * 0.2);
@@ -14,24 +13,34 @@
   text-decoration: none;
   transition: background-color 120ms ease;
 }
-.ghbutton:hover { background: var(--ob-plate-firm); }
-.ghbutton:focus-visible {
+.btn:hover { background: var(--ob-plate-firm); }
+.btn:focus-visible {
   outline: 2px solid var(--ob-accent);
   outline-offset: 3px;
 }
 
-.ghbutton__mark {
+/* the one thing the page wants you to do: filled in the accent, dark ink
+   on top because white on #43cd72 fails contrast */
+.btn--primary {
+  border-color: var(--ob-accent);
+  background: var(--ob-accent);
+  color: var(--ob-bg);
+  font-weight: 600;
+}
+.btn--primary:hover { background: color-mix(in srgb, var(--ob-accent) 86%, white); }
+
+.btn__mark {
   flex: none;
   width: calc(var(--badge-h) * 0.4);
   height: calc(var(--badge-h) * 0.4);
   fill: currentColor;
 }
 
-.ghbutton__label {
+.btn__label {
   font-size: clamp(0.94rem, 0.95vw, 26px);
   white-space: nowrap;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ghbutton { transition: none; }
+  .btn { transition: none; }
 }

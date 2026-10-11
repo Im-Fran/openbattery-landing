@@ -1,5 +1,6 @@
-import AppStoreBadge from "./AppStoreBadge";
+import DownloadButton from "./DownloadButton";
 import GitHubButton from "./GitHubButton";
+import SupportButton from "./SupportButton";
 import { useI18n } from "../i18n";
 import "./Hero.css";
 
@@ -30,6 +31,11 @@ export default function Hero() {
             height={1024}
           />
 
+          <p className="hero__soon">
+            <span className="hero__soon-dot" aria-hidden="true" />
+            {t.hero.iosSoon}
+          </p>
+
           <div className="hero__titleblock">
             <h1 className="hero__name" id="hero-title">
               OpenBattery
@@ -49,8 +55,9 @@ export default function Hero() {
           </div>
 
           <div className="hero__actions">
-            <AppStoreBadge />
+            <DownloadButton />
             <GitHubButton />
+            <SupportButton />
           </div>
 
           <ul className="hero__badges">
